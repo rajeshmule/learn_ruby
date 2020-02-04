@@ -85,3 +85,79 @@ puts sport_i_like.inspect
 sport_i_like.push("tanis")
 puts sport_i_like.inspect
 
+# 6.15 Get item from a position
+
+
+items = ["ice cream", "chocolate", "movies", "beaches"]
+
+
+puts items[0]
+
+# 6.16 Exercise - Get item from a position
+
+
+puts sport_i_like[2]
+
+# 6.17 Exercise 2 - Get item from a position
+
+# I have an array called alphabets. It has 7 items.
+#  From this array get the 4th item. Your result should be “K”
+
+
+alphabets = ["A", "B", "F", "K", "L", "O", "T"]
+
+puts alphabets[3]
+
+# 7. String to array and back
+
+# 7.1 String to array using split
+
+city_name = "Salt Lake City"
+
+array = city_name.split
+
+puts array.inspect
+
+# 7.2 Exercise 1 - String to array
+# In this exercise we need to split name of the city and then print the contents of the array.
+
+city_name = "rio de janeiro"
+
+city_array = city_name.split
+puts city_array.inspect
+
+# 7.3 Split string along comma
+things_i_likes="ice cream, chocolate, movies, beaches"
+
+items = things_i_likes.split(", ")
+
+puts items.inspect
+
+# 7.4 Exercise 1 - Split fruit name along comma
+# split this string into an array of names of fruits
+fruits = "banana, apple, grapes"
+
+fruit = fruits.split(", ")
+puts fruit.inspect
+
+# 7.5 Exercise 1 - Split friends name
+friends = "Jon and Annie"
+friend = friends.split("and ")
+puts friend.inspect 
+
+# 7.6 Exercise 2 - Split string along pipe
+# Split the string into an array of cities
+
+cities = "Chicago | Miami | Seattle"
+
+city = cities.split(" | ")
+puts city.inspect
+
+# 7.7 Array to String using join
+# Array has a method called join. join converts the contents of an array into a String.
+
+# Execute the code below and you will see result as icecreamchocolatemovies. This does not look right. Scroll down to see the right solution
+# 7.8 Exercise - Array to String using join
+
+puts "I like to play " + sport_i_like.join(", ") + "."
+
